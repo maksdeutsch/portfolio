@@ -52,7 +52,7 @@
         <p class="title-section">Démonstration</p>
         <div class="demonstration">
             <p>
-            Dans mon système, j’utilise deux servomoteurs : l’un “scan” balaye l’horizon pour mesurer la lumière, l’autre “track” oriente réellement le panneau. Au démarrage, je centre les deux à 90°, j’initialise l’écran puis, à intervalle régulier (actuellement 20 s), je fais tourner le servo de scan sur 18 positions entre 10° et 180° ; à chaque pas je lis la luminosité et je mémorise l’angle où la lumière est maximale.<br></br> Ensuite, je décide de l’orientation du panneau avec des priorités : d’abord le vent, puis l’humidité, sinon la lumière. Concrètement, si la vitesse du vent (simulée par un potentiomètre) dépasse 50 km/h, je mets le panneau à plat (90°) pour limiter la prise au vent ; si l’humidité dépasse 90 %, je l’incline à 45° pour favoriser l’écoulement de l’eau ou le nettoyage ; sinon, en conditions normales, j’aligne le panneau sur l’angle lumineux optimal trouvé par le balayage.<br></br> Je mets à jour cette commande chaque seconde, et j’affiche en continu sur le LCD la météo, la luminosité en %, la position optimale et le mode actif (Vent / Humidité / Lumière). Pour plus d'informations sur le programme Arduino vous pouvez consulter la partie <a href="#rapport">rapport</a> du site.
+            Dans mon système, j’utilise deux servomoteurs : l’un “scan” balaye l’horizon pour mesurer la lumière, l’autre “track” oriente réellement le panneau. Au démarrage, je centre les deux à 90°, j’initialise l’écran puis, à intervalle régulier (actuellement 20 s), je fais tourner le servo de scan sur 18 positions entre 10° et 180° ; à chaque pas je lis la luminosité et je mémorise l’angle où la lumière est maximale.<br></br> Ensuite, je décide de l’orientation du panneau avec des priorités : d’abord le vent, puis l’humidité, sinon la lumière. Concrètement, si la vitesse du vent (simulée par un potentiomètre) dépasse 50 km/h, je mets le panneau à plat (90°) pour limiter la prise au vent ; si l’humidité dépasse 90 %, je l’incline à 45° pour favoriser l’écoulement de l’eau ou le nettoyage ; sinon, en conditions normales, j’aligne le panneau sur l’angle lumineux optimal trouvé par le balayage.<br></br> Je mets à jour cette commande chaque seconde, et j’affiche en continu sur le LCD la météo, la luminosité en %, la position optimale et le mode actif (Vent / Humidité / Lumière).
             Les informations précédemment citées sont également disponibles sur le site web édité pour l'occasion et dont l'exemple vous est montré si dessous.     
             </p>
             <video controls muted>
@@ -120,4 +120,5 @@
 </body>
 
 </html>
+
 
